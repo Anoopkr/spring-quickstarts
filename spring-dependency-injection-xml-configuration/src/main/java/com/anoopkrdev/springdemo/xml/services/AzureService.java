@@ -1,6 +1,6 @@
-package com.anoopkrdev.application.services;
+package com.anoopkrdev.springdemo.xml.services;
 
-public class AWSProvider implements CloudServiceProvider {
+public class AzureService implements CloudServiceProvider {
 
     private AuthenticationService authenticationService;
     private String region;
@@ -10,15 +10,16 @@ public class AWSProvider implements CloudServiceProvider {
         this.region = region;
     }
 
-    AWSProvider(AuthenticationService authenticationService){
+    public void setAuthenticationService(AuthenticationService authenticationService) {
         this.authenticationService = authenticationService;
     }
 
     public String getServiceProviderName() {
-        return "AWS";
+        return "Azure";
     }
 
     public String getAuthenticationService() {
         return this.authenticationService.getAuthenticationService();
     }
+
 }

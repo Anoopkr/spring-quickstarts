@@ -1,6 +1,6 @@
-package com.anoopkrdev.application;
+package com.anoopkrdev.springdemo.xml;
 
-import com.anoopkrdev.application.services.CloudServiceProvider;
+import com.anoopkrdev.springdemo.xml.services.CloudServiceProvider;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Application{

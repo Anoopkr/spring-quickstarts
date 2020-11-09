@@ -10,22 +10,22 @@
     <context:property-placeholder location="classpath:application.properties"/>
 
     <bean id="awsService"
-          class="com.anoopkrdev.application.services.AWSProvider">
+          class="com.anoopkrdev.springdemo.xml.services.AWSService">
         <constructor-arg ref="samlService" />
         <property name="region" value="${cloud.region}" />
     </bean>
 
     <bean id="azureService"
-          class="com.anoopkrdev.application.services.AzureProvider">
+          class="com.anoopkrdev.springdemo.xml.services.AzureService">
         <property name="authenticationService" ref="openIdService" />
         <property name="region" value="${cloud.region}" />
     </bean>
 
     <bean id="samlService"
-          class="com.anoopkrdev.application.services.SAMLProvider">
+          class="com.anoopkrdev.springdemo.xml.services.SAMLService">
     </bean>
     <bean id="openIdService"
-          class="com.anoopkrdev.application.services.OpenIDProvider">
+          class="com.anoopkrdev.springdemo.xml.services.OpenIDService">
     </bean>
 </beans>
 

@@ -10,7 +10,7 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>di-xml-configuration</artifactId>
+    <artifactId>di-annotation-configuration</artifactId>
 
     <dependencies>
         <dependency>
